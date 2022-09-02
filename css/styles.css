@@ -218,11 +218,12 @@ index-page
 .hero {
     background-color: var(--banner-bg-color);
     background-position: center;
-    background-size: ;
+    background-size: contain ;
     background-repeat: no-repeat;
     background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url('../img/hero-bg-img.jpg');
     text-align: center;
     padding: 200px 0;
+    max-width: 1600рх;
 }
 
 .hero-heading {
@@ -467,8 +468,14 @@ clients
 
 /*.clients-list-item {}*/
 
-.clients-icon:hover,
-.clients-icon:focus {
+.clients-icon:hover .clients-item-link,
+.clients-icon:focus .clients-item-link {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.clients-item-link:hover .clients-icon,
+.clients-item-link:focus .clients-icon {
     fill: var(--accent-color);
     border-color: var(--accent-color);
 }
@@ -536,7 +543,7 @@ portfolio-page
 /*.portfolio-link {}*/
 
 .portfolio-project:hover {
-    border: 1px #EEEEEE;
+    border: 1px var(--project-border-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -636,7 +643,7 @@ footer
     gap: 10px;
 }
 
-.footer-socials-item {
+.footer-socials-item, .footer-socials-link  {
     width: 44px;
     height: 44px;
     background-color: #ffffff10;
@@ -651,9 +658,20 @@ footer
     background-color: var(--accent-color);
 }
 
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+background-color: var(--accent-color);
+}
+
+
+.footer-socials-link:hover .footer-socials-item,
+.footer-socials-link:focus .footer-socials-item {
+    background-color: var(--accent-color);
+}
 
 /*.footer-socials-link {}*/
 
 .footer-socials-icon {
     fill: var(--white-color);
 }
+
