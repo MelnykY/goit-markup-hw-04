@@ -200,6 +200,7 @@ header contacts
     align-items: center;
     width: 16px;
     fill: solid var(--main-color);
+    margin-bottom: 2px;
 }
 
 /*==header line for portfolio page==*/
@@ -217,12 +218,11 @@ index-page
 .hero {
     background-color: var(--banner-bg-color);
     background-position: center;
-    background-size: contain;
+    background-size: ;
     background-repeat: no-repeat;
     background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url('../img/hero-bg-img.jpg');
     text-align: center;
     padding: 200px 0;
-
 }
 
 .hero-heading {
@@ -370,7 +370,8 @@ index-page
 
 .team-list-item {
     background-color: var(--white-color);
-
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-text {
@@ -517,7 +518,9 @@ portfolio-page
 .sorting-button:focus {
     background-color: var(--btn-filter-color);
     color: var(--white-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-projects-list {
@@ -531,6 +534,13 @@ portfolio-page
 }
 
 /*.portfolio-link {}*/
+
+.portfolio-project:hover {
+    border: 1px #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .portfolio-project-text {
     padding: 20px 24px;
